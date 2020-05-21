@@ -15,6 +15,15 @@ namespace FileManager_WinForms
         public Form1()
         {
             InitializeComponent();
+
+            button1.Click += Button1_Click;
+        }
+
+        // Обработчик события нажатия на кнопку
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            // При нажатии выведется сообщение 'Hello, World'
+            MessageBox.Show("Hello, World!");
         }
     }
 }
